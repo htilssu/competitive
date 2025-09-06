@@ -37,32 +37,20 @@ using vvll = vector<vll>;
 // ----------- Solution class (LeetCode style) -----------
 class Solution {
 public:
-    vector<vector<int> > dp;
+    vvi dp;
 
     int countSubmatrices(vector<vector<int> > &grid, int k) {
         int n = grid.size();
         int m = grid[0].size();
-        dp.assign(n, vector<int>(m, -1));
+        dp.assign(n + 1, vi(m + 1, 0));
 
         int count = 0;
         int maxj = grid[0].size();
 
         FOR(i, 0, grid.size()) {
-            if (i == 0) {
-                dp[i][i] = grid[i][i];
-            }
             FOR(j, 0, maxj) {
-                if (dp[i][j] == -1) {
-                    if (i > 0 && j > 0) {
-                        dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + grid[i][j];
-                    } else if (i == 0 && j > 0) {
-                        dp[i][j] = dp[i][j - 1] + grid[i][j];
-                    } else if (j == 0 && i > 0) {
-                        dp[i][j] = dp[i - 1][j] + grid[i][j];
-                    }
-
-                }
-                if (dp[i][j] > k) {
+                dp[i + 1][j + 1] = dp[i + 1][j] + dp[i][j + 1] + grid[i][j] - dp[i][j];
+                if (dp[i + 1][j + 1] > k) {
                     maxj = j;
                 } else {
                     count++;
