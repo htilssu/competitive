@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.0)
+project(3070_Count_Submatrices_With_Top_Left_Element_And_Sum_Less_Than_K)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(3070_Count_Submatrices_With_Top_Left_Element_And_Sum_Less_Than_K main.cpp)
