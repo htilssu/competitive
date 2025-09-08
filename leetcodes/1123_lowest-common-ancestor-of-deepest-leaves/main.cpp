@@ -24,61 +24,29 @@ using namespace std;
 
 class Solution {
 public:
-    int maxLevel = 0;
-    int minRoot = INT_MAX;
-
     int getLevel(TreeNode *node) {
         if (node == nullptr) {
-            return -1;
+            return 0;
         }
 
-
-        int leftLevel = 1 + getLevel(node->left);
-        int rightLevel = 1 + getLevel(node->right);
-
-        return max(leftLevel, rightLevel);
+        return 1 + max(getLevel(node->left), getLevel(node->right));
     }
 
-    TreeNode *calTreeLevel(TreeNode *node, int level) {
-        if (node->left == nullptr && node->right == nullptr) {
-            if (level < maxLevel) {
-                return nullptr;
-            }
-            return node;
-        }
-
-        TreeNode *left = nullptr;
-        TreeNode *right = nullptr;
-
-        if (node->left != nullptr) {
-            left = calTreeLevel(node->left, level + 1);
-        }
-
-        if (node->right != nullptr) {
-            right = calTreeLevel(node->right, level + 1);
-        }
-
-        if (left == nullptr && right == nullptr) {
-            return nullptr;
-        }
-
-        TreeNode *minV;
-        if (left != nullptr && right != nullptr) {
-            return node;
-        }
-        if (left != nullptr) {
-            minV = left;
-        } else {
-            minV = right;
-        }
-
-
-        return minV;
-    }
 
     TreeNode *lcaDeepestLeaves(TreeNode *root) {
-        maxLevel = getLevel(root);
-        return calTreeLevel(root, 0);
+        if (!root) { return nullptr; }
+
+        int leftH = getLevel(root->left);
+        int rightH = getLevel(root->right);
+
+        if (leftH == rightH) {
+            return root;
+        }
+
+        if (leftH > rightH) {
+            return lcaDeepestLeaves(root->left);
+        }
+        return lcaDeepestLeaves(root->right);
     }
 };
 
