@@ -4,11 +4,11 @@ This repository contains solutions for competitive programming problems, primari
 
 ## Completed Problems
 
-| Problem Number | Problem Title | Directory Path |
-|----------------|---------------|----------------|
-| 1123 | Lowest Common Ancestor of Deepest Leaves | [leetcodes/1123_lowest-common-ancestor-of-deepest-leaves](./leetcodes/1123_lowest-common-ancestor-of-deepest-leaves) |
-| 1936 | Add Minimum Number of Rungs | [leetcodes/1936_add-minimum-number-of-rungs](./leetcodes/1936_add-minimum-number-of-rungs) |
-| 3070 | Count Submatrices With Top Left Element And Sum Less Than K | [leetcodes/3070-Count-Submatrices-With-Top-Left-Element-And-Sum-Less-Than-K](./leetcodes/3070-Count-Submatrices-With-Top-Left-Element-And-Sum-Less-Than-K) |
+| Problem Number | Problem Title | Difficulty | Directory Path |
+|----------------|---------------|------------|----------------|
+| 1123 | Lowest Common Ancestor of Deepest Leaves | Medium | [leetcodes/1123_lowest-common-ancestor-of-deepest-leaves](./leetcodes/1123_lowest-common-ancestor-of-deepest-leaves) |
+| 1936 | Add Minimum Number of Rungs | Medium | [leetcodes/1936_add-minimum-number-of-rungs](./leetcodes/1936_add-minimum-number-of-rungs) |
+| 3070 | Count Submatrices With Top Left Element And Sum Less Than K | Medium | [leetcodes/3070-Count-Submatrices-With-Top-Left-Element-And-Sum-Less-Than-K](./leetcodes/3070-Count-Submatrices-With-Top-Left-Element-And-Sum-Less-Than-K) |
 
 ## Repository Structure
 
