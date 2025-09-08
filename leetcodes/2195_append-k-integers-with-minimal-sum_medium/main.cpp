@@ -10,15 +10,16 @@ class Solution {
 public:
     long long minimalKSum(vector<int> &nums, int k) {
         sort(nums.begin(), nums.end());
-        set set(nums.begin(), nums.end());
+        nums.erase(unique(nums.begin(), nums.end()), nums.end());
 
         ll sum = (ll)k * (k + 1) / 2;
-        for (const __remove_cv(int) i : set) {
+
+        for (int i : nums) {
             if (i <= k) {
                 k++;
                 sum += k - i;
             } else {
-                return sum;
+                break;
             }
         }
 
