@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.0)
+project(1123_lowest_common_ancestor_of_deepest_leaves)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(1123_lowest_common_ancestor_of_deepest_leaves main.cpp)
