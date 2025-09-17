@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.0)
+project(1573_number_of_ways_to_split_a_string_medium)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(1573_number_of_ways_to_split_a_string_medium main.cpp)
