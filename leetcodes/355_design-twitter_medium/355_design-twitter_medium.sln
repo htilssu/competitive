@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "355_design-twitter_medium", "355_design-twitter_medium\355_design-twitter_medium.csproj", "{7359EFE0-B6C7-4768-973F-C71E6724BCAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7359EFE0-B6C7-4768-973F-C71E6724BCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7359EFE0-B6C7-4768-973F-C71E6724BCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7359EFE0-B6C7-4768-973F-C71E6724BCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7359EFE0-B6C7-4768-973F-C71E6724BCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
