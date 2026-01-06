@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.1)
+project(1161_maximum_level_sum_of_a_binary_tree_medium)
+
+set(CMAKE_CXX_STANDARD 26)
+
+add_executable(1161_maximum_level_sum_of_a_binary_tree_medium main.cpp)
