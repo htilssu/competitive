@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 4.1)
+project(3419_minimize_the_maximum_edge_weight_of_graph)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(3419_minimize_the_maximum_edge_weight_of_graph main.cpp)
